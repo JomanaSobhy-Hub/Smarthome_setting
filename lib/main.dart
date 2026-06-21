@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nti_project/Assignment3.dart';
 import 'package:nti_project/Home.dart';
 import 'package:nti_project/Profilescreen.dart';
+import 'package:nti_project/Smarthome.dart';
 import 'package:nti_project/greeting.dart';
 
 void main() {
@@ -35,7 +36,14 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Assignment3(),
+      home: Smarthome(),
+      // initialRoute: 'pag1',
+      // routes:<String, WidgetBuilder>{
+      //   'page1':(context) => Assignment3(),
+      //   'page2':(context)=> Profilescreen(),
+      //   'page3':(context)=> greeting(),
+
+      // } ,
     );
   }
 }
