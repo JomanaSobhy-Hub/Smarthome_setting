@@ -36,7 +36,7 @@ class Smarthome extends StatelessWidget {
           ),
         ],
       ),
-      
+
       body: Padding(
         padding: const EdgeInsets.all(12),
         // تم إضافة SingleChildScrollView هنا لحل مشكلة الـ Overflow
@@ -75,56 +75,74 @@ class Smarthome extends StatelessWidget {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                   Column(
-                    children: [
-              Icon(Icons.thermostat, color: Colors.blueGrey, size: 28),
-              SizedBox(height: 8),
-              Text(
-                '22°C',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),
-              ),
-              SizedBox(height: 4),
-              Text(
-                'Inside',
-                style: TextStyle(fontSize: 14, color: Colors.grey),
-              ),]
-                  ),
-                 
                   Column(
                     children: [
-              Icon(Icons.sunny, color: Colors.orange, size: 28),
-              SizedBox(height: 8),
-              Text(
-                '18°C',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),
-              ),
-              SizedBox(height: 4),
-              Text(
-                'Outside',
-                style: TextStyle(fontSize: 14, color: Colors.grey),
-              ),]
-                    
+                      Icon(Icons.thermostat, color: Colors.blueGrey, size: 28),
+                      SizedBox(height: 8),
+                      Text(
+                        '22°C',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        'Inside',
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
+                  ),
+
+                  Column(
+                    children: [
+                      Icon(Icons.sunny, color: Colors.orange, size: 28),
+                      SizedBox(height: 8),
+                      Text(
+                        '18°C',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        'Outside',
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
                   ),
                   Column(
-                   children: [
-              Icon(Icons.opacity, color: Colors.blue, size: 28),
-              SizedBox(height: 8),
-              Text(
-                '58%',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),
-              ),
-              SizedBox(height: 4),
-              Text(
-                'Humidity',
-                style: TextStyle(fontSize: 14, color: Colors.grey),
-              ),]
+                    children: [
+                      Icon(Icons.opacity, color: Colors.blue, size: 28),
+                      SizedBox(height: 8),
+                      Text(
+                        '58%',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87,
+                        ),
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        'Humidity',
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                    ],
                   ),
                 ],
               ),
               const SizedBox(height: 20),
               const Text(
                 'Rooms',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.black87),
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                ),
               ),
               const SizedBox(height: 10),
               SizedBox(
@@ -141,9 +159,18 @@ class Smarthome extends StatelessWidget {
                       width: 80,
                       height: 100,
                     ),
-                    title: const Text("Living Room", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),
-              ),
-                    subtitle: const Text("4 devices . 22°C",style: TextStyle(fontSize: 14, color: Colors.grey)),
+                    title: const Text(
+                      "Living Room",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    subtitle: const Text(
+                      "4 devices . 22°C",
+                      style: TextStyle(fontSize: 14, color: Colors.grey),
+                    ),
                     trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
@@ -163,8 +190,18 @@ class Smarthome extends StatelessWidget {
                       width: 80,
                       height: 100,
                     ),
-                    title: const Text("BedRoom", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),),
-                    subtitle: const Text("3 devices . 20°C",style: TextStyle(fontSize: 14, color: Colors.grey)),
+                    title: const Text(
+                      "BedRoom",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    subtitle: const Text(
+                      "3 devices . 20°C",
+                      style: TextStyle(fontSize: 14, color: Colors.grey),
+                    ),
                     trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
@@ -184,8 +221,18 @@ class Smarthome extends StatelessWidget {
                       width: 80,
                       height: 100,
                     ),
-                    title: const Text("Kitchen", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87),),
-                    subtitle: const Text("5 devices . 24°C",style: TextStyle(fontSize: 14, color: Colors.grey)),
+                    title: const Text(
+                      "Kitchen",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    subtitle: const Text(
+                      "5 devices . 24°C",
+                      style: TextStyle(fontSize: 14, color: Colors.grey),
+                    ),
                     trailing: const Icon(Icons.arrow_forward_ios),
                   ),
                 ),
