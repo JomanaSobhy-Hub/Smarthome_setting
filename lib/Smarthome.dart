@@ -124,7 +124,7 @@ class Smarthome extends StatelessWidget {
               const SizedBox(height: 20),
               const Text(
                 'Rooms',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.black87),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.black87),
               ),
               const SizedBox(height: 10),
               SizedBox(
