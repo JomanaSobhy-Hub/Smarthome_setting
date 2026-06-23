@@ -3,8 +3,10 @@ import 'package:nti_project/Assignment3.dart';
 import 'package:nti_project/Home.dart';
 import 'package:nti_project/Profilescreen.dart';
 import 'package:nti_project/SHedited.dart';
+import 'package:nti_project/Setting.dart';
 import 'package:nti_project/Smarthome.dart';
 import 'package:nti_project/greeting.dart';
+import 'package:nti_project/listtypes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SHedited(),
+      home: Setting(),
       // initialRoute: 'pag1',
       // routes:<String, WidgetBuilder>{
       //   'page1':(context) => Assignment3(),

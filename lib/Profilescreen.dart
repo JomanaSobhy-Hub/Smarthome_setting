@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class Profilescreen extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -14,13 +15,15 @@ class Profilescreen extends StatelessWidget {
         child: Column(
           children: [
             // Image.network(
+
             //   'https://www.bing.com/th/id/OIP.V9CZHx6_rMlpRpVYEse39gHaLH?w=110&h=128&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2',
             // ),
             // Text("Jomana Sobhy", style: TextStyle(fontSize: 30)),
             // Text('sobhyjomana2@gmail.com', style: TextStyle(fontSize: 15)),
-            Image.network(
-              'https://www.bing.com/th/id/OIP.V9CZHx6_rMlpRpVYEse39gHaLH?w=110&h=128&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2',
-              height: 150,
+            CachedNetworkImage(
+              imageUrl: "http://via.placeholder.com/350x150",
+              placeholder: (context, url) => CircularProgressIndicator(),
+              errorWidget: (context, url, error) => Icon(Icons.error),
             ),
             Text(
               'Jomana',
