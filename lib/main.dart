@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:nti_project/Assignment3.dart';
-import 'package:nti_project/Home.dart';
-import 'package:nti_project/Profilescreen.dart';
-import 'package:nti_project/SHedited.dart';
-import 'package:nti_project/Setting.dart';
-import 'package:nti_project/Smarthome.dart';
-import 'package:nti_project/greeting.dart';
-import 'package:nti_project/listtypes.dart';
+import 'package:nti_project/core/widgets/app_pagecontroller.dart';
+import 'package:nti_project/features/home/SHedited.dart';
+import 'package:nti_project/features/auth/loginscreen.dart';
+import 'package:nti_project/features/home/Home.dart';
+import 'package:nti_project/features/home/ShowScreen.dart';
+import 'package:nti_project/features/profile/Profilescreen.dart';
+import 'package:nti_project/features/settings/Setting.dart';
+import 'package:nti_project/features/home/Smarthome.dart';
+import 'package:nti_project/features/analytic/analytical.dart';
+import 'package:nti_project/features/home/greeting.dart';
+import 'package:nti_project/features/auth/listtypes.dart';
+import 'package:nti_project/features/auth/sign_up.dart';
+import 'package:nti_project/core/api/state_full_widget_example.dart';
+import 'package:nti_project/my_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,14 +46,11 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Setting(),
-      // initialRoute: 'pag1',
-      // routes:<String, WidgetBuilder>{
-      //   'page1':(context) => Assignment3(),
-      //   'page2':(context)=> Profilescreen(),
-      //   'page3':(context)=> greeting(),
+      home: Loginscreen(),
 
-      // } ,
+      //  Setting(),
+      // initialRoute: '/',
+      // routes: {'/': (context) => listtypes(), '/sett': (context) => Setting(email: 'omana@2006',pass: '1234',)},
     );
   }
 }
